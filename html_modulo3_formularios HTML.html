@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--
+Links extras con información:
+https://www.w3schools.com/html/html_table_colspan_rowspan.asp : Uso de colspan para crear una sola fila del titulo
+https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child: usado para tr:nth-child(1), tema de CSS
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        padding: 70px;
+    }
+
+    .menu img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .ejercicio span, p{
+        font-size: 1.4em;
+        color: green;
+        text-align: justify;
+    }
+
+    table, th, td{      
+        font-size: 1rem;
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        
+    }
+    th, td{
+        border: 1px solid;
+        border-color: black;
+    }
+    tr:nth-child(1){
+            border: 1px solid black;      
+            
+    }
+    tr:nth-child(even) { /*(even) hace que solo se piden las filas par es decir las filas 2,4,6 etc, en este caso se pinta la fila del "1-10" porque la celda "numeros del 1 al 100" es la fila 1*/
+    background-color: #dddddd;   
+    }
+    .tabla_titulo{
+        background-color: black;
+        color: white;
+        
+    }
+    
+    /* Hacer la tabla responsive */
+    @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            
+            td {
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid black;
+                position: relative;
+                text-align: center;
+            }
+            
+            td:last-child {
+                border-bottom: 2px solid black;
+            }
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="menu">
+            <img src="https://conectaempleo-formacion.fundaciontelefonica.com/empleo-digital-theme/images/custom/logo_fundacion.png" alt="">
+        </div>
+        <h2>Practica 1</h2>
+        <div class="ejercicio">            
+            <p>Crear una página HTML que presente al usuario una tabla
+                conteniendo los números del 1 al 100 en filas de diez números.<br/>
+                La cabecera de la tabla tiene que estar formada por una sola celda
+                con el texto ‘Números del 1 al 100’</p>
+        </div>
+        <div class="tabla">
+            <table>
+                <tr>
+                    <th colspan="10" class="tabla_titulo">
+                        Números del 1 al 100       
+                    </th>
+                </tr>                 
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                </tr> 
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr> 
+                <tr>
+                    <td>31</td>
+                    <td>32</td>
+                    <td>33</td>
+                    <td>34</td>
+                    <td>35</td>
+                    <td>36</td>
+                    <td>37</td>
+                    <td>38</td>
+                    <td>39</td>
+                    <td>40</td>
+                </tr> 
+                <tr>
+                    <td>41</td>
+                    <td>42</td>
+                    <td>43</td>
+                    <td>44</td>
+                    <td>45</td>
+                    <td>46</td>
+                    <td>47</td>
+                    <td>48</td>
+                    <td>49</td>
+                    <td>50</td>
+                </tr> 
+                <tr>
+                    <td>61</td>
+                    <td>62</td>
+                    <td>63</td>
+                    <td>64</td>
+                    <td>65</td>
+                    <td>66</td>
+                    <td>67</td>
+                    <td>68</td>
+                    <td>69</td>
+                    <td>70</td>
+                </tr> 
+                <tr>
+                    <td>71</td>
+                    <td>72</td>
+                    <td>73</td>
+                    <td>74</td>
+                    <td>75</td>
+                    <td>76</td>
+                    <td>77</td>
+                    <td>78</td>
+                    <td>79</td>
+                    <td>80</td>
+                </tr> 
+                <tr>
+                    <td>81</td>
+                    <td>82</td>
+                    <td>83</td>
+                    <td>84</td>
+                    <td>85</td>
+                    <td>86</td>
+                    <td>87</td>
+                    <td>88</td>
+                    <td>89</td>
+                    <td>90</td>
+                </tr> 
+                <tr>
+                    <td>91</td>
+                    <td>92</td>
+                    <td>93</td>
+                    <td>94</td>
+                    <td>95</td>
+                    <td>96</td>
+                    <td>97</td>
+                    <td>98</td>
+                    <td>99</td>
+                    <td>100</td>
+                </tr>                             
+            </table>
+            
+        </div>
+    </div>
+</body>
+</html>
