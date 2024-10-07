@@ -1,0 +1,4 @@
+1. Correcta redacción de contenidos: Web vista por usuarios y buscadores. Debe ofrecer contenido de buena calidad. Buen eso de estructura de la web.
+2. Etiquetas meta (Title, Description, KeyWord): Titulo, descripcion que no debe usarse +160 caracteres. Keyword: Lista de palabras clave que hace referencia al contenido de la web. Palabras naturales, descriptivas y coherentes.
+3. Construcción de enlaces a nuestra web: Los buscadores lo usan.
+4. Uso de atributos "alt": Page rank: Web que mide la medicion de la calidad SEO
